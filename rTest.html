@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Recommandation</title>
+  </head>
+  <body> 
+  <h1>Body</h1>
+    <div id="main">
+    	<div id="profile">
+    	<h1>Profile</h1>
+    	<script type="text/javascript">
+    		
+    		    		// Check for the various File API support.
+			if (window.File && window.FileReader && window.FileList && window.Blob) {
+
+          var h1 = document.createelement('H1');
+          h1.innerHTML = "TRUE";
+          document.getElementById("profile").appendChild(h1);
+  				// Great success! All the File APIs are supported.
+  				alert('The File APIs are fully supported in this browser :D ');
+  				console.log("The File APIs are fully supported in this browser :D");
+			} else {
+        var h1 = document.createelement('H1');
+          h1.innerHTML = "FALSE";
+          document.getElementById("profile").appendChild(h1);
+  				alert('The File APIs are not fully supported in this browser :( ');
+  				console.log("The File APIs are not fully supported in this browser :(");
+			}
+
+    	</script>
+
+
+    	</div>
+
+    	<div id="vorschläge">
+    		
+    	</div>
+    </div>
+  </body>
+</html>
